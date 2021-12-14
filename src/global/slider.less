@@ -1,0 +1,30 @@
+.rc-slider {
+  .rc-slider-rail {
+    background: @neutral-100;
+  }
+
+  .rc-slider-track {
+    border-radius: 6px;
+    background: linear-gradient(
+      90deg,
+      #ff6700 1.25%,
+      #fc8800 51.65%,
+      #ff6700 100%
+    );
+  }
+
+  .rc-slider-handle {
+    border-color: @neutral-0;
+    background: linear-gradient(
+      90deg,
+      #ff6700 1.25%,
+      #fc8800 51.65%,
+      #ff6700 100%
+    );
+  }
+
+  .rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging {
+    border-color: #ffffff;
+    box-shadow: none;
+  }
+}

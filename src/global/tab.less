@@ -1,0 +1,37 @@
+.rc-tabs {
+  .rc-tabs-nav-list {
+    display: flex;
+    gap: 24px;
+    &:extend(.body-2);
+    color: @neutral-200;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    .rc-tabs-tab.rc-tabs-tab-active {
+      &:extend(.color-global);
+    }
+  }
+}
+.rc-tabs-top .rc-tabs-ink-bar,
+.rc-tabs-bottom .rc-tabs-ink-bar {
+  height: 4px;
+  border-radius: 10px;
+}
+.rc-tabs-top .rc-tabs-ink-bar {
+  bottom: -8px;
+}
+
+.rc-tabs-ink-bar {
+  position: absolute;
+  background: linear-gradient(
+    90deg,
+    #ff6700 1.25%,
+    #fc8800 51.65%,
+    #ff6700 100%
+  );
+
+  pointer-events: none;
+}
+.rc-tabs-ink-bar-animated {
+  transition: all 0.3s;
+}

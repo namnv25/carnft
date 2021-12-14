@@ -1,0 +1,62 @@
+@import '../../../../global/theme.less';
+.connectWallet {
+  flex: 1;
+  justify-self: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.modalConnect {
+  :global {
+    .rc-dialog-content {
+      border-radius: 4px;
+    }
+    .rc-select {
+      width: 100% !important;
+    }
+    .rc-select-item-option-active {
+      background: @primary-300 !important;
+    }
+    .prefix-icon {
+      margin-right: 16px !important;
+    }
+  }
+  .content {
+    width: 100%;
+    padding: 0 18px;
+    .btnOtherMask,
+    .btnMetaMask {
+      width: 100%;
+      margin-bottom: 16px;
+      min-height: 56px;
+      background: @primary-500;
+      justify-content: flex-start;
+    }
+  }
+  .footer {
+    padding-top: 8px;
+    padding-bottom: calc(42px - 24px);
+    .footerContent {
+      display: flex;
+      justify-content: center;
+    }
+    .contanierFooter {
+      display: flex;
+      justify-content: center;
+      .title {
+        cursor: pointer;
+        background: linear-gradient(
+          90deg,
+          #ff6700 1.25%,
+          #fb9600 51.65%,
+          #ff6700 100%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .and {
+        margin: 0 4px;
+      }
+    }
+  }
+}

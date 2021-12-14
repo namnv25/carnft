@@ -1,0 +1,170 @@
+@import '../../../../../../global/theme.less';
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-end;
+  .detailPrice {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    .offer {
+      display: flex;
+      align-items: center;
+      .offerTitle {
+        display: flex;
+      }
+      .offerCoinPrice {
+        padding: 0 4px;
+      }
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      margin-bottom: 8px;
+      .priceTitle {
+        margin-right: 16px;
+      }
+      .solana {
+        margin-left: 12px;
+      }
+    }
+  }
+  .groupButton {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    button {
+      height: 56px;
+      min-width: 170px;
+      margin-left: 24px;
+      &:extend(.headline-1);
+    }
+    .modal-title {
+      color: @secondary-100;
+    }
+  }
+}
+
+.modalList {
+  .form {
+    .formItem {
+      display: flex;
+      align-items: flex-end;
+      gap: 16px;
+      margin-bottom: 16px;
+
+      .amount {
+        width: 275px;
+      }
+
+      .asset {
+        .label {
+          margin-bottom: 4px;
+          margin-left: 1px;
+        }
+        .selectAsset {
+          width: 100px;
+        }
+      }
+    }
+  }
+  :global {
+    .rc-dialog-content {
+      background: @primary-300 !important;
+
+      border-radius: 4px;
+    }
+    .rc-select {
+      width: 100% !important;
+    }
+    .rc-select-item-option-active {
+      background: @primary-300 !important;
+    }
+  }
+
+  .footerModal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 48px 0;
+
+    .btnConfirm {
+      height: 40px;
+      min-width: 210px;
+      border-radius: 8px;
+      &:extend(.body-3);
+    }
+  }
+}
+
+.modalUnbox {
+  .contentUnbox {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .content {
+      display: flex;
+      &:extend(.headline);
+
+      p {
+        padding-right: 4px;
+      }
+      .nameCar {
+        &:extend(.color-global);
+      }
+    }
+  }
+
+  :global {
+    .rc-dialog-content {
+      background: @primary-300 !important;
+      border: 1px solid @neutral-100 !important;
+
+      border-radius: 4px;
+    }
+    .rc-select {
+      width: 100% !important;
+    }
+    .rc-select-item-option-active {
+      background: @primary-300 !important;
+    }
+  }
+  .footerModal {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 48px 0;
+
+    .btnConfirm {
+      height: 40px;
+      min-width: 210px;
+      border-radius: 8px;
+      &:extend(.body-3);
+    }
+  }
+}
+
+.modalFailConnect {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 48px;
+
+    .wrapBtnConnect {
+      text-align: center;
+      margin: 32px 0 48px 0;
+
+      .btnConnect {
+        width: 210px;
+      }
+    }
+  }
+}

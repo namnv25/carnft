@@ -1,0 +1,92 @@
+@import '../../../global/theme.less';
+
+.referrals {
+  .formItem {
+    display: flex;
+    gap: 24px;
+    align-items: flex-end;
+
+    .btnTrade,
+    .btnCopy {
+      width: 127px;
+    }
+  }
+
+  .inputTrade {
+    min-width: 175px;
+    &:disabled {
+      color: @neutral-0;
+    }
+  }
+
+  .link {
+    margin-top: 32px;
+
+    .inputLink {
+      min-width: 409px;
+    }
+  }
+
+  .list {
+    margin-top: 32px;
+
+    .tableReferrals {
+      margin-top: 8px;
+    }
+
+    table {
+      //   border-collapse: unset !important;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+    }
+    th,
+    td {
+      height: 48px;
+      text-align: left;
+      padding: 12px 16px;
+    }
+    th:first-child {
+      border-radius: 8px 0px 0px 0px;
+    }
+    th:last-child {
+      border-radius: 0px 8px 0px 0px;
+    }
+    th:first-child,
+    td:first-child {
+      text-align: left;
+    }
+  }
+}
+
+.modalTradeSuccess {
+  .contentTrade {
+    text-align: center;
+    margin-top: 49px;
+
+    .iconBnbXxl {
+      width: 175px;
+      height: 175px;
+    }
+
+    .receive {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      align-items: center;
+      margin-top: 32px;
+
+      .toBnb {
+        &:extend(.color-global);
+      }
+    }
+  }
+
+  .footerTrade {
+    padding: 48px;
+    text-align: center;
+    .btnGoInventory {
+      width: 140px;
+    }
+  }
+}

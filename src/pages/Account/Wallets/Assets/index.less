@@ -1,0 +1,32 @@
+@import '../../../../global/theme.less';
+
+.assets {
+  width: 210px;
+  height: 56px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid @neutral-300;
+  background: @primary-400;
+
+  .info {
+    display: flex;
+    gap: 4px;
+  }
+
+  .wrapIcon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: @neutral-200;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+}

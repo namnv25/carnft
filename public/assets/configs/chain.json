@@ -1,0 +1,11 @@
+{
+  "chainName": "Binance Smart Chain - Testnet",
+  "rpcUrls": ["https://data-seed-prebsc-1-s3.binance.org:8545/"],
+  "chainId": "0x61",
+  "nativeCurrency": {
+    "symbol": "BNB",
+    "decimals": 18
+  },
+  "scanHttp": "https://testnet.bscscan.com",
+  "blockExplorerUrls": ["https://testnet.bscscan.com"]
+}

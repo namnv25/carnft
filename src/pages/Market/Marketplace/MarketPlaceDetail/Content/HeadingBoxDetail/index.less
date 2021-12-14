@@ -1,0 +1,56 @@
+@import '../../../../../../global/theme.less';
+.headingContent {
+  .subTitle {
+    &:extend(.color-global);
+  }
+  .groupInfo {
+    display: flex;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    .owner,
+    .created {
+      flex: 1;
+      background: @primary-300;
+      border: 1px solid @neutral-100;
+      border-radius: 8px;
+      display: flex;
+      padding: 8px;
+    }
+    .owner {
+      margin-right: 24px;
+    }
+    .avatar {
+      padding: 10px;
+      background: @primary-500;
+      border-radius: 6px;
+      width: 32px;
+      height: 32px;
+
+      margin-right: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .content {
+    .listInfo {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+
+      .detailInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .detailHeading {
+          display: flex;
+          gap: 11px;
+          p {
+            &:extend(.color-global);
+          }
+        }
+      }
+    }
+  }
+}

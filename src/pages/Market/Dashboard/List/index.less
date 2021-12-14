@@ -1,0 +1,38 @@
+@import '../../../../global/theme.less';
+
+.list {
+  padding: 8px;
+  // border: 1px solid @secondary-500;
+  position: relative;
+  box-sizing: border-box;
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 16px;
+  min-height: 85px;
+  max-height: 85px;
+  border: 1px solid @neutral-200;
+  position: relative;
+  background: @primary-400;
+
+  // &:before {
+  //   display: block;
+  //   content: '';
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   z-index: -1;
+  //   margin: -2px; /* !importanté */
+  //   border-radius: inherit; /* !importanté */
+  //   &:extend(.backgroundColor);
+  // }
+  &:global {
+    &.listed {
+      margin-right: 24px;
+    }
+  }
+}
+.list:last-child {
+  margin-bottom: 32px;
+}

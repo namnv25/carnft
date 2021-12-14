@@ -1,0 +1,60 @@
+@import '../../global/theme.less';
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  .radio {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 10px;
+
+    .radioInput {
+      display: none;
+    }
+    .radioDiv {
+      position: relative;
+      width: 20px;
+      height: 20px;
+      // border: 2px solid #d8e4e2;
+      // background: transparent;
+      border-radius: 50%;
+      box-sizing: border-box;
+      margin-right: 10px;
+      padding: 2px;
+      z-index: 1056;
+      &:extend(.backgroundColor);
+
+      &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+        &:extend(.backgroundColor);
+        transform: translate(-50%, -50%);
+        border-radius: inherit;
+        z-index: 1058;
+      }
+      &:after {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: calc(100% - 4px);
+        height: calc(100% - 4px);
+        background: black;
+        transform: translate(-50%, -50%);
+        border-radius: inherit;
+        z-index: 1057;
+      }
+    }
+    .label {
+      &:extend(.color-global);
+    }
+  }
+}

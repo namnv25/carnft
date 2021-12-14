@@ -1,0 +1,39 @@
+// Primary
+@primary-500: #09080d;
+@primary-400: #16151a;
+@primary-300: #201f26;
+@primary-200: #27252e;
+@primary-100: #2d2b36;
+
+// Neutral
+@neutral-0: #ffffff;
+@neutral-100: #a9a8b4;
+@neutral-200: #727272;
+@neutral-300: #525252;
+
+// Secondary
+@secondary-500: #3073b2;
+@secondary-400: #50a8fa;
+@secondary-300: #004dd6;
+@secondary-200: #fa4327;
+@secondary-100: #08b24f;
+
+// Red
+@red-500: #fd3348;
+@red-400: #fe283f;
+// Disabled
+@disabled: #f5f5f5;
+
+.backgroundColor {
+  background: linear-gradient(
+    90deg,
+    #ff6700 1.25%,
+    #fb9600 51.65%,
+    #ff6700 100%
+  );
+}
+.color-global {
+  &:extend(.backgroundColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

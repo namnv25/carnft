@@ -1,0 +1,95 @@
+.wrapper-input {
+  position: relative;
+  width: fit-content;
+
+  .input-label {
+    margin-bottom: 8px;
+    cursor: default;
+  }
+
+  .input {
+    height: 40px;
+    display: inline-block;
+    border: 1px solid transparent;
+    background: @primary-400;
+    border-radius: 4px;
+    padding: 0 16px;
+    &:extend(.body-2);
+    color: @neutral-0;
+    transition: all 0.3s;
+
+    border-image-slice: 20;
+    transition: 0.3s;
+
+    &:focus,
+    &:hover {
+      outline: none;
+      border: 1px solid #fb9600;
+
+      // border: solid 1px transparent;
+      // background-image: linear-gradient(
+      //     rgba(255, 255, 255, 0),
+      //     rgba(255, 255, 255, 0)
+      //   ),
+      //   linear-gradient(90deg, #ff6700 1.25%, #fb9600 51.65%, #ff6700 100%);
+      // background-origin: border-box;
+      // background-clip: content-box, border-box;
+      // box-shadow: 1px 2999px 1px @primary-400 inset;
+
+      // border-image-source: linear-gradient(
+      //   to right,
+      //   #ff6700 1.25%,
+      //   #fb9600 51.65%,
+      //   #ff6700 100%
+      // );
+      // border-image-slice: 1;
+      // border-radius: 4px;
+    }
+
+    // input disabled
+    &-disabled {
+      background: @primary-100;
+      cursor: not-allowed;
+      color: @neutral-200;
+
+      &:hover {
+        border: 1px solid transparent;
+      }
+    }
+
+    // input number
+    &-number {
+      /* Chrome, Safari, Edge, Opera */
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      &[type='number'] {
+        -moz-appearance: textfield;
+      }
+    }
+
+    // input password
+    &-password {
+      padding-right: 48px;
+    }
+  }
+
+  .mask-password,
+  .icon-suffix {
+    position: absolute;
+    right: 16px;
+    top: 8px;
+  }
+
+  .mask-password {
+    cursor: pointer;
+  }
+
+  .with-label {
+    top: 36px;
+  }
+}

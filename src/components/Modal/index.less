@@ -1,0 +1,45 @@
+@import '../../global/colors.less';
+
+.rcModal {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  :global {
+    .rc-dialog-content {
+      background: #16151a;
+      border: 1px solid @neutral-100 !important;
+
+      border-radius: unset;
+      width: 100%;
+      .rc-dialog-close {
+        opacity: 1;
+        top: 20px !important;
+        right: 20px !important;
+        width: 40px;
+        height: 40px;
+      }
+      .rc-dialog-body {
+        padding: 24px 24px 0 24px;
+        .modal-title {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 36px;
+          color: @neutral-0;
+          font-size: 24px;
+          font-weight: 700;
+          line-height: 32px;
+        }
+        .modal-footer {
+          width: 100%;
+        }
+        .modal-body {
+          // &:extend(.body-extra);
+          font-size: 14px;
+          line-height: 20px;
+          color: white;
+          // @neutral-0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,136 @@
+@import './colors.less';
+.btn {
+  &:extend(.body-3);
+
+  display: inline-flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 8px;
+  padding: 0 16px;
+  min-width: fit-content;
+  cursor: pointer;
+  white-space: nowrap;
+  border: none;
+  &:extend(.backgroundColor);
+  transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+  color: @neutral-0;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  // Align element in button
+  &-center {
+    justify-content: center;
+  }
+
+  &-right {
+    justify-content: flex-end;
+  }
+
+  &-left {
+    justify-content: flex-start;
+  }
+
+  // Spin loading
+  &-loading {
+    opacity: 0.8;
+    cursor: context-menu;
+  }
+
+  .loading {
+    border-top: 1px solid @neutral-0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    animation: loading-spin 0.7s linear infinite;
+    margin-right: 16px;
+  }
+
+  @keyframes loading-spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  // prefix icon
+  .prefix-icon {
+    margin-right: 12px;
+  }
+
+  // button disabled
+  &:disabled {
+    background: @disabled;
+    cursor: not-allowed;
+    color: @neutral-100;
+    border: 1px solid @neutral-100;
+
+    p {
+      color: @neutral-100;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  // button secondary
+  &-secondary {
+    color: #fb9600; // TODO: change to gradient color
+
+    border: solid 1px transparent;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(90deg, #ff6700 1.25%, #fb9600 51.65%, #ff6700 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    box-shadow: 1px 999px 1px @primary-500 inset;
+
+    // &:extend(.color-global);
+
+    &:disabled {
+      color: @neutral-100;
+      box-shadow: 1px 999px 1px @disabled inset;
+    }
+  }
+
+  // button text
+  &-text,
+  &-danger {
+    &:extend(.body-2);
+    color: @neutral-200;
+    background: none;
+
+    &:hover {
+      // background: @disabled;
+
+      &:extend(.backgroundColor);
+      color: @neutral-0;
+
+      .prefix-icon {
+        img {
+          filter: brightness(0) invert(1);
+        }
+      }
+    }
+
+    &:disabled {
+      background: none;
+    }
+  }
+
+  // button block
+  &-block {
+    width: 100%;
+  }
+
+  // button danger
+  &-danger {
+    color: @red-500;
+  }
+}

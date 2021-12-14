@@ -1,0 +1,33 @@
+@import '../../../../global/theme.less';
+
+.menu {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding-left: 38px;
+
+  .menuItem {
+    margin-right: 32px;
+    list-style: none;
+
+    .menuLink {
+      &:extend(.body-7);
+      color: @neutral-200;
+      text-decoration: none;
+    }
+    .menuLink:hover {
+      color: @neutral-0;
+      -webkit-background-clip: unset;
+      -webkit-text-fill-color: unset;
+      background: unset;
+    }
+    // @media screen and (min-width: 1440px) {
+    //   margin-right: 16px;
+    // }
+  }
+  .active {
+    .menuLink {
+      &:extend(.color-global);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@import '../../../../global/theme.less';
+
+.form {
+  .sort {
+    width: 209px;
+    :global(.rc-select-selector) {
+      border: 1px solid @primary-300 !important;
+      background: transparent;
+      .rc-select-selection-placeholder {
+        color: @neutral-200;
+        &:extend(.body-2);
+      }
+    }
+    // &:global {
+    //   &.rc-select {
+    //     width: unset !important;
+    //   }
+    //   &.rc-select-focused {
+    //     .rc-select-selector {
+    //       border-color: @primary-300 !important;
+    //     }
+    //   }
+    // }
+  }
+}

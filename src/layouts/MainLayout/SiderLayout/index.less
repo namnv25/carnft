@@ -1,0 +1,29 @@
+@import '../../../global/theme.less';
+
+.siderLayout {
+  display: flex;
+  padding-top: 104px;
+
+  .menuSider {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 241px;
+    padding: 24px 16px;
+    background: @primary-500;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    overflow: auto;
+
+    .iconActive {
+      filter: brightness(0) invert(1);
+    }
+  }
+
+  .main {
+    width: calc(100% - 241px);
+    padding: 32px 32px 32px 24px;
+    margin-left: 241px;
+  }
+}

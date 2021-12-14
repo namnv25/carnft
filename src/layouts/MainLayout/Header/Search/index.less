@@ -1,0 +1,27 @@
+@import '../../../../global/theme.less';
+
+.formSearch {
+  position: relative;
+  margin-left: 24px;
+  .searchInput {
+    min-width: 443px;
+    height: 40px;
+    background: @neutral-0;
+
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+
+    &:extend(.body-2);
+    padding: 8px 16px;
+  }
+
+  .searchIcon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+  }
+}

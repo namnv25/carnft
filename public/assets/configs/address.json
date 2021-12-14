@@ -1,0 +1,32 @@
+{
+  "hardCap": {
+    "name": "RaceMaster",
+    "symbol": "RM",
+    "owner": "0xB090929a31F2ad4b7C1A3A4C5B00535D01F8442a",
+    "totalSupply": "1000000000000000000000000000",
+    "address": "0xf3878D5Fe4958AB11c0E03C0a7b560De0258C47F"
+  },
+  "softCap": {
+    "name": "RaceMasterSoft",
+    "symbol": "RMS",
+    "owner": "0xB090929a31F2ad4b7C1A3A4C5B00535D01F8442a",
+    "address": "0x0ae692b0EF7DfF6bc502E11b0caFDD232f998255"
+  },
+  "nft": {
+    "name": "RaceMasterNFT",
+    "symbol": "RNFT",
+    "owner": "0xB090929a31F2ad4b7C1A3A4C5B00535D01F8442a",
+    "address": "0x98a0298736659372BD263603218CAE7085Cab1E7"
+  },
+  "tokenTransferProxy": {
+    "address": "0x366bBF62C416a50447b5a6d7dB0682fBB43bE598"
+  },
+  "mysterySale": {
+    "bucket": "10000",
+    "sold": "0",
+    "startTime": 0,
+    "endTime": 0,
+    "price": "2000000000000000000",
+    "address": "0xb0b93cd97C0e347C710d714D8270d22978857fa4"
+  }
+}

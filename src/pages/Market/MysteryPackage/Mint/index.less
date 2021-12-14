@@ -1,0 +1,79 @@
+@import '../../../../global/theme.less';
+
+.mintMystery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8px;
+  .contentTime {
+    display: flex;
+    max-width: 932px;
+    gap: 24px;
+    .box {
+      min-height: 138px;
+      min-width: 208px;
+
+      position: relative;
+      background: @primary-500;
+      border-radius: 8px;
+      padding: 24px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        margin: -2px; /* !importanté */
+        border-radius: inherit; /* !importanté */
+        &:extend(.backgroundColor);
+      }
+    }
+  }
+  .form {
+    max-width: 442px;
+    margin-top: 32px;
+
+    .inputQuantity {
+      width: 442px;
+    }
+
+    .formItem {
+      display: flex;
+      align-items: flex-end;
+      gap: 24px;
+      margin: 32px 0 48px 0;
+
+      .amount {
+        width: 318px;
+      }
+
+      .asset {
+        .label {
+          margin-bottom: 4px;
+          margin-left: 1px;
+        }
+        .selectAsset {
+          width: 100px;
+        }
+      }
+    }
+    .formButton {
+      text-align: center;
+      .btnMint {
+        width: 209px;
+      }
+    }
+  }
+}
+
+.timeCountDown {
+  &:extend(.color-global);
+}

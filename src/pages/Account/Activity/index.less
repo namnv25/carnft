@@ -1,0 +1,40 @@
+@import '../../../global/theme.less';
+@import '../../../global/theme.less';
+
+.activity {
+  display: flex;
+  flex-direction: column;
+
+  .tableActivity {
+    margin-top: 8px;
+    table {
+      //   border-collapse: unset !important;
+      -moz-border-radius: 8px;
+      -webkit-border-radius: 8px;
+      border-radius: 8px;
+    }
+    th,
+    td {
+      height: 48px;
+      text-align: left;
+      padding: 12px 16px;
+    }
+    th:first-child {
+      border-radius: 8px 0px 0px 0px;
+    }
+    th:last-child {
+      border-radius: 0px 8px 0px 0px;
+    }
+    th:first-child,
+    td:first-child {
+      text-align: left;
+    }
+    .imagePrice {
+      margin-right: 6px;
+    }
+    .contanierName {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

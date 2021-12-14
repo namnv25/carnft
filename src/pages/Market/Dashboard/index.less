@@ -1,0 +1,32 @@
+@import '../../../global/theme.less';
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  .main {
+    width: 100%;
+    flex: 1;
+    .row {
+      display: flex;
+      width: 100%;
+      .col {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .colPagination {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      .col_6 {
+        width: 50%;
+        height: 100%;
+        .listTitle {
+          margin-bottom: 16px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import './colors.less';
+
+.pagination {
+  :global {
+    .rc-pagination-item {
+      background-color: transparent;
+      width: 32px;
+      height: 32px;
+      border: none;
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: @neutral-0;
+
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .rc-pagination-item-active {
+      background: #201f26;
+      border-radius: 4px;
+      width: 32px;
+      height: 32px;
+      a {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .rc-pagination-prev,
+    .rc-pagination-next {
+      .rc-pagination-item-link {
+        border: none;
+        background: transparent;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: @neutral-0;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import '../../global/theme.less';
+
+.wrapper {
+  padding: 16px 16px 24px 16px;
+  background: @primary-400;
+  width: 210px;
+  min-height: 176px;
+  border-radius: 4px;
+  border: 1px solid @primary-300;
+  position: relative;
+
+  .rangeValues {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 4px;
+  }
+
+  .values {
+    display: flex;
+    margin-top: 6px;
+
+    .min,
+    .max {
+      position: absolute;
+    }
+
+    .min {
+      left: 8px;
+    }
+
+    .max {
+      right: 8px;
+    }
+  }
+
+  .wrapBtn {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+  }
+}

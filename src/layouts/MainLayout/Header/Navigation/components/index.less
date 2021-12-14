@@ -1,0 +1,40 @@
+@import '../../../../../global/theme.less';
+
+.searchContainer {
+  .formSearch {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .searchInput {
+      position: relative;
+      min-width: 256px;
+      height: 40px;
+      background: #09080d;
+      outline: none;
+      border-radius: 8px;
+      border: 1px solid #fb9600;
+      z-index: 11;
+      &:extend(.body-2);
+      padding: 8px 16px;
+      color: @neutral-0;
+      padding-right: 36px;
+    }
+
+    .searchIcon {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      // cursor: pointer;
+      z-index: 11;
+    }
+  }
+}
+
+.search {
+  cursor: pointer;
+  &:hover {
+    filter: brightness(0) invert(1);
+  }
+}

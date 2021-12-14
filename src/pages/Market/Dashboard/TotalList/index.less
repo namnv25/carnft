@@ -1,0 +1,36 @@
+@import '../../../../global/theme.less';
+
+.totalList {
+  border-radius: 8px;
+  margin-right: 24px;
+  max-height: 102px;
+  margin-top: 16px;
+  margin-bottom: 64px;
+  padding: 16px;
+
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .totalTitle {
+    margin-top: 8px;
+    &:extend(.body-2);
+  }
+  &:global {
+    &.listed {
+      background: @secondary-300;
+    }
+    &.volumn {
+      background: @secondary-200;
+    }
+    &.sold {
+      background: @secondary-100;
+    }
+  }
+}
+
+.totalList:last-child {
+  margin-right: 0;
+}

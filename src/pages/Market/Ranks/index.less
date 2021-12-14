@@ -1,0 +1,75 @@
+@import '../../../global/theme.less';
+.rank {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  .topPlayer {
+    margin-bottom: 64px;
+    .heading {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    .main {
+      padding: 32px 0;
+      display: flex;
+      :global {
+        .slick-slider {
+          width: 100%;
+          .slick-prev,
+          .slick-next {
+            display: none !important;
+          }
+          .slick-list {
+            width: 100%;
+            .slick-track {
+              display: flex;
+              width: 250px !important;
+            }
+          }
+          .slick-dots {
+            bottom: -57px;
+            .slick-active {
+              button {
+                background: linear-gradient(
+                  90deg,
+                  #ff6700 1.25%,
+                  #fb9600 51.65%,
+                  #ff6700 100%
+                );
+              }
+            }
+            li {
+              button {
+                background: #a9a8b4;
+                border-radius: 8px;
+                width: 24px;
+                height: 5px;
+                padding: 0;
+
+                &::before {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .topClan {
+    .subTitle {
+      margin-bottom: 32px;
+    }
+    th,
+    td {
+      height: 48px;
+      text-align: left;
+    }
+
+    th:first-child,
+    td:first-child {
+      text-align: center;
+    }
+  }
+}

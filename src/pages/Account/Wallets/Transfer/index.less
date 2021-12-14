@@ -1,0 +1,73 @@
+@import '../../../../global/theme.less';
+
+.transfer {
+  padding-left: 260px;
+  padding-top: 104px;
+
+  .header {
+    display: flex;
+    gap: 8px;
+
+    .iconBack {
+      cursor: pointer;
+    }
+
+    .txt {
+      &:extend(.color-global);
+    }
+  }
+
+  .fromTo {
+    display: inline-flex;
+    align-items: center;
+    gap: 32px;
+    margin-top: 49px;
+
+    .box {
+      width: 233px;
+      height: 80px;
+      background: @primary-400;
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .metamask,
+    .raceMaster {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+
+  .reverseFrom {
+    flex-direction: row-reverse;
+  }
+
+  .formTransfer {
+    margin-top: 32px;
+    .formItem {
+      display: flex;
+      align-items: flex-end;
+      gap: 24px;
+
+      .amount {
+        width: 435px;
+      }
+
+      .asset {
+        .label {
+          margin-bottom: 4px;
+          margin-left: 1px;
+        }
+        .selectAsset {
+          width: 100px;
+        }
+      }
+    }
+
+    .btnNext {
+      width: 559px;
+      margin-top: 48px;
+    }
+  }
+}

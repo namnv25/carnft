@@ -1,0 +1,131 @@
+// @import (css) url('http://fonts.cdnfonts.com/css/sf-pro-display');
+@import './colors.less';
+@import './fonts.less';
+// Caption
+.caption {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.caption-1 {
+  &:extend(.caption);
+  font-weight: 400;
+}
+
+.caption-2 {
+  &:extend(.caption);
+  font-weight: 600;
+}
+
+// Body
+.body {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.body-extra {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.body-sub {
+  font-size: 24px;
+  line-height: 36px;
+}
+.body-1 {
+  &:extend(.body);
+  font-weight: 400;
+}
+
+.body-2 {
+  &:extend(.body);
+  font-weight: 500;
+}
+
+.body-3 {
+  &:extend(.body);
+  font-weight: 600;
+}
+
+.body-4 {
+  &:extend(.body);
+  font-weight: 700;
+}
+
+.body-5 {
+  &:extend(.body-extra);
+  font-weight: 400;
+}
+
+.body-6 {
+  &:extend(.body-extra);
+  font-weight: 500;
+}
+
+.body-7 {
+  &:extend(.body-extra);
+  font-weight: 600;
+}
+
+.body-bold-extra {
+  &:extend(.body-extra);
+  font-weight: bold;
+}
+// Headline
+.headline {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.headline-1 {
+  &:extend(.headline);
+  font-weight: 500;
+}
+
+.headline-2 {
+  &:extend(.headline);
+  font-weight: 700;
+}
+
+// Title
+.title-md {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.title-lg {
+  font-size: 30px;
+  line-height: 38px;
+}
+
+.title-1 {
+  &:extend(.title-md);
+  font-weight: 600;
+}
+
+.title-2 {
+  &:extend(.title-md);
+  font-weight: 700;
+}
+
+.title-3 {
+  &:extend(.title-lg);
+  font-weight: 600;
+}
+
+.title-4 {
+  &:extend(.title-lg);
+  font-weight: 700;
+}
+
+.title-5 {
+  font-size: 46px;
+  line-height: 54px;
+  font-weight: 700;
+}
+
+.sub-title {
+  color: @neutral-0;
+  &:extend(.body-sub);
+  font-weight: bold;
+}

@@ -1,0 +1,65 @@
+@import '../../../../global/theme.less';
+
+.wraperWallet {
+  .wallet {
+    margin-top: 12px;
+    position: relative;
+
+    .boxInfo {
+      width: 365px;
+      height: 296px;
+      border-radius: 8px;
+      background: @primary-400;
+      padding: 24px;
+      padding-bottom: 0;
+
+      .iconMetamask {
+        margin-right: 12px;
+      }
+
+      .balance {
+        margin-top: 30px;
+
+        .bnb {
+          display: flex;
+          gap: 4px;
+        }
+
+        .usd {
+          margin-top: 12px;
+        }
+      }
+
+      .wrapBtn {
+        margin-top: 30px;
+        display: flex;
+        gap: 24px;
+
+        .deposit,
+        .withdraw {
+          width: 147px;
+        }
+      }
+    }
+
+    .boxFooter {
+      position: absolute;
+      bottom: 0;
+      width: 365px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      padding: 0 24px;
+      gap: 4px;
+      background: @primary-300;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+  }
+
+  .boxAssets {
+    margin-top: 32px;
+    display: flex;
+    gap: 24px;
+  }
+}
